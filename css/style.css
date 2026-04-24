@@ -43,6 +43,10 @@ img {
   width: 100%;
 }
 
+.stage h2 {
+  font-size: 2.5em;
+}
+
 /*----------Navigation-----------*/
 header nav {
   background-color: #22213a;
@@ -112,6 +116,43 @@ main section:nth-child(3) {
 
 .scenarie img {
   opacity: 40%;
+}
+
+/*--------- Stage ---------*/
+.stage {
+  background-color: #f8f8f8;
+  color: #22213a;
+  /* display: none;  fjernes når scenariet er på plads */
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  /* &.active {
+      display: block; 
+  } fjernes når scenariet er på plads */
+}
+.stage .btn {
+  background-color: #426153;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  color: #f8f8f8;
+  margin-left: 45%;
+}
+.stage .btn:hover {
+  background-color: #353434;
+}
+.stage .btn-valg {
+  background-color: #426153;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  color: #f8f8f8;
+  margin-left: 5%;
+}
+.stage .btn-valg:hover {
+  background-color: #353434;
 }
 
 /*----------Footer-----------*/

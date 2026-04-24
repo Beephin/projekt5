@@ -1,4 +1,8 @@
-
+$bg: #22213a;
+$primaryColor: #f8f8f8;
+$cta: #426153;
+$cta-hover: #353434;
+$space: 1rem;
 
 *{
     margin: 0;
@@ -7,7 +11,7 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
-    background-color: #f8f8f8;
+    background-color: $primaryColor;
 }
 
 p, a{
@@ -44,9 +48,13 @@ img{
     width: 100%;
 }
 
+.stage h2{
+    font-size: 2.5em;
+}
+
 /*----------Navigation-----------*/
 header nav{
-    background-color: #22213a;
+    background-color: $bg;
     padding: 1em;
     display: flex;
     justify-content: space-between;
@@ -120,6 +128,45 @@ main section:nth-child(3){
 
 .scenarie img{
     opacity: 40%;
+}
+
+/*--------- Stage ---------*/
+
+.stage {
+    background-color: $primaryColor;
+    color: $bg;
+    /* display: none;  fjernes når scenariet er på plads */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: $space;
+    /* &.active {
+        display: block; 
+    } fjernes når scenariet er på plads */ 
+    .btn{
+        background-color: $cta;
+        border: none;
+        border-radius: $space;
+        padding: $space/2;
+        border-radius: $space;
+        color: $primaryColor; //tekst farven i knappen//
+        margin-left: 45%;
+    }
+    .btn:hover {
+        background-color: $cta-hover;
+    }
+    .btn-valg{
+        background-color: $cta;
+        border: none;
+        border-radius: $space;
+        padding: $space/2;
+        border-radius: $space;
+        color: $primaryColor; //tekst farven i knappen//
+        margin-left: 5%;
+    }
+    .btn-valg:hover {
+        background-color: $cta-hover;
+    }
+
 }
 
 /*----------Footer-----------*/
