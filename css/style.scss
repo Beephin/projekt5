@@ -1,8 +1,278 @@
-$bg: #22213a;
-$primaryColor: #f8f8f8;
-$cta: #426153;
-$cta-hover: #353434;
-$space: 1rem;
+
+/*----------Body-----------*/
+
+$nav-color: #22213a;
+$body-bg-color: #f8f8f8;
+$cta: #4e6867;
+$cta-hover: #333636;
+$space: 1em;
+$text-color: #333;
+$font: 'Open Sans', sans-serif;
+
+body{
+    font-family: $font;
+    background-color: $body-bg-color;
+    margin: 0;
+    box-sizing: border-box;
+
+    p, a{
+        font-size: 1.4em;
+        font-weight: 400;
+    }
+
+    p{
+        padding: 0 2em 1.5em 2em;
+    }
+
+    h1, h2{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        padding: $space;
+        text-align: center;
+    }
+
+    h3{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        padding: $space;
+    }
+
+    h4{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    h5{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    h1, h2, h3, h4, h5{
+        font-size: 2.5em;
+    }
+
+    .bg-grå p{
+        font-size: 1.5em;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    .bg-grå h3{
+        text-decoration: underline;
+        font-size: 2.5em;
+        font-weight: bold;
+    }
+
+}
+
+/*----------Navigation-----------*/
+
+header nav{
+    background-color: $nav-color;
+    padding: $space;
+    display: flex;
+    justify-content: space-between;
+
+    .logo{
+        height: 4em;
+        width: auto;
+    }
+}
+
+nav ul{
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+}
+
+nav ul li{
+        padding: 1em;
+}
+
+nav ul li a{
+        text-decoration: none;
+        color: $body-bg-color;
+}
+
+nav ul li a:hover{
+        text-decoration: none;
+        color: #849aaa;
+}
+
+/*----------Hovedindhold-----------*/
+
+main section{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+main section:nth-child(1){
+    border-bottom: 3px $nav-color solid;
+    padding-bottom: 1em;
+}
+
+.billede-tekst img{
+    width: 85vw;
+    display: block; 
+}
+
+main section:nth-child(3){
+    background-color: #e2e2e2;
+    padding-bottom: 1em;
+}
+
+.billede-tekst img{
+    padding-top: 3rem;
+    padding-bottom: 10rem;
+}
+
+.bg-grå{
+    justify-content: center;
+    text-align: center;
+}
+
+.scenarie img{
+    opacity: 40%;
+}
+
+
+/*--------- Stage ---------*/
+
+.stage {
+    background-color: $body-bg-color;
+    /* display: none;  fjernes når scenariet er på plads */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: $space;
+    /* &.active {
+        display: block; 
+    } fjernes når scenariet er på plads */ 
+    .btn{
+        background-color: $cta;
+        border: none;
+        border-radius: $space;
+        padding: $space/2;
+        border-radius: $space;
+        color: $body-bg-color;
+        margin-left: 45%;
+    }
+
+     /* @include partial.btn; */
+
+    .btn:hover {
+        background-color: $cta-hover;
+    }
+    .btn-valg{
+        background-color: $cta;
+        border: none;
+        border-radius: $space;
+        padding: $space/2;
+        border-radius: $space;
+        color: $body-bg-color;
+        margin-left: 5%;
+    }
+    .btn-valg:hover {
+        background-color: $cta-hover;
+    }
+
+}
+
+/*----------Footer-----------*/
+footer{
+    background-color: $nav-color;
+    color: $body-bg-color;
+    text-align: center;
+    padding: 2em;
+
+    footer i{
+        font-size: 10vh;
+        margin: .5em;
+        color: $nav-color;
+    }
+
+    footer p{
+        color: $body-bg-color;
+    }
+
+    footer .logo{
+        margin-bottom: 1rem;
+    }
+
+     .logo{
+        height: 4em;
+        width: auto;
+    }
+}
+
+/*Desktop*/
+
+@media screen and (min-width: 769px){
+    .banner{
+        height:80vh;
+    }
+
+    main section:nth-of-type(1){
+        width: 70vw;
+        margin: 0 auto;
+    }
+
+    .billede-tekst{
+        display: flex;
+        gap: $space;
+    }
+    main section:nth-of-type(2) h2{
+        text-align: center;
+        padding-bottom: 1.5em;
+    }
+
+    .billede-tekst img{
+        width: 40%;
+        padding-right: 2em;
+        order: 1;
+    }
+
+    .billede-tekst div{
+        width: 60%;
+    }
+
+    .billede-tekst a{
+        margin: 0 2em 1.5em 2em;
+    }
+
+    .bg-grå{
+        display: flex;
+        gap: 3em;
+    }
+
+    .bg-grå img{
+        width: 50%;
+        object-fit: cover;
+    }
+
+    .bg-grå div h2{
+        text-align: left;
+    }
+
+    main section:nth-child(3){
+        padding-bottom: 0;
+    }
+
+}
+
+@media screen and (max-width: 769px){
+main section{
+    margin-left: 0;
+    margin-right: 0;
+    }
+}
+ 
+
+
+/*
 
 *{
     margin: 0;
@@ -53,6 +323,8 @@ img{
 }
 
 /*----------Navigation-----------*/
+
+/*
 header nav{
     background-color: $bg;
     padding: 1em;
@@ -87,7 +359,7 @@ nav ul li a{
 
 /*----------Hovedindhold-----------*/
 
-
+/*
 
 main section:nth-child(1){
     border-bottom: 3px #20344e solid;
@@ -132,16 +404,17 @@ main section:nth-child(3){
 
 /*--------- Stage ---------*/
 
+/*
 .stage {
     background-color: $primaryColor;
     color: $bg;
-    /* display: none;  fjernes når scenariet er på plads */
+    /* display: none;  fjernes når scenariet er på plads 
     max-width: 800px;
     margin: 0 auto;
     padding: $space;
     /* &.active {
         display: block; 
-    } fjernes når scenariet er på plads */ 
+    } fjernes når scenariet er på plads 
     .btn{
         background-color: $cta;
         border: none;
@@ -169,7 +442,7 @@ main section:nth-child(3){
 
 }
 
-/*----------Footer-----------*/
+/*----------Footer-----------
 footer{
     background-color: #22213a;
     color: #fff;
@@ -191,7 +464,7 @@ footer .logo{
     margin-bottom: 1rem;
 }
 
-/*Desktop*/
+/*Desktop
 
 @media screen and (min-width: 769px){
     .banner{
@@ -245,3 +518,5 @@ footer .logo{
     }
 
 }
+
+*/
