@@ -37,28 +37,24 @@ body{
         padding: $space;
     }
 
-    h4{
+    h4, h5{
         font-family: 'Raleway', sans-serif;
         font-weight: 400;
         text-align: center;
     }
 
-    h5{
+    h6{
         font-family: 'Raleway', sans-serif;
         font-weight: 300;
         text-align: center;
     }
 
-    h1, h2, h3, h4, h5{
+    h1, h2, h3, h4, h5, h6{
         font-size: 2.5em;
     }
 
     .bg-grå p{
         font-size: 1.5em;
-    }
-
-    img{
-        width: 100%;
     }
 
     .bg-grå h3{
@@ -84,23 +80,44 @@ header nav{
 }
 
 nav ul{
-        display: flex;
-        align-items: center;
-        list-style-type: none;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
 }
 
 nav ul li{
-        padding: 1em;
+    padding: 1em;
 }
 
 nav ul li a{
-        text-decoration: none;
-        color: $body-bg-color;
+    text-decoration: none;
+    color: $body-bg-color;
 }
 
 nav ul li a:hover{
-        text-decoration: none;
-        color: #849aaa;
+    text-decoration: none;
+    color: #849aaa;
+}
+
+header img{
+    width: 100%;
+    height: 80vh;
+    }
+
+.billede-tekst img{
+    width: auto;
+    height: 50vh;
+    padding-bottom: 1em;
+    }
+
+main img{
+    width: 100%;
+    height: auto;
+}
+
+.img-fejl{
+    width: 30vw;
+    height: auto;   /* -------- Hvordan får jeg det til at sidde i midten! det vil ikke.. ----------- */
 }
 
 /*----------Hovedindhold-----------*/
@@ -115,19 +132,9 @@ main section:nth-child(1){
     padding-bottom: 1em;
 }
 
-.billede-tekst img{
-    width: 85vw;
-    display: block; 
-}
-
 main section:nth-child(3){
     background-color: #e2e2e2;
     padding-bottom: 1em;
-}
-
-.billede-tekst img{
-    padding-top: 3rem;
-    padding-bottom: 10rem;
 }
 
 .bg-grå{
@@ -139,8 +146,9 @@ main section:nth-child(3){
     opacity: 40%;
 }
 
-
 /*--------- Stage ---------*/
+
+/* ------ Hvordan fpr jeg knapperne tili at blive større ------ */
 
 .stage {
     background-color: $body-bg-color;
@@ -224,19 +232,15 @@ footer{
         display: flex;
         gap: $space;
     }
+
     main section:nth-of-type(2) h2{
         text-align: center;
-        padding-bottom: 1.5em;
     }
 
     .billede-tekst img{
-        width: 40%;
+        width: 100%;
         padding-right: 2em;
         order: 1;
-    }
-
-    .billede-tekst div{
-        width: 60%;
     }
 
     .billede-tekst a{
@@ -268,9 +272,8 @@ main section{
     margin-left: 0;
     margin-right: 0;
     }
-}
- 
 
+}
 
 /*
 

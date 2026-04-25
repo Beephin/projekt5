@@ -24,24 +24,21 @@ body h3 {
   font-weight: 400;
   padding: 1em;
 }
-body h4 {
+body h4, body h5 {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   text-align: center;
 }
-body h5 {
+body h6 {
   font-family: "Raleway", sans-serif;
   font-weight: 300;
   text-align: center;
 }
-body h1, body h2, body h3, body h4, body h5 {
+body h1, body h2, body h3, body h4, body h5, body h6 {
   font-size: 2.5em;
 }
 body .bg-grå p {
   font-size: 1.5em;
-}
-body img {
-  width: 100%;
 }
 body .bg-grå h3 {
   text-decoration: underline;
@@ -81,6 +78,27 @@ nav ul li a:hover {
   color: #849aaa;
 }
 
+header img {
+  width: 100%;
+  height: 80vh;
+}
+
+.billede-tekst img {
+  width: auto;
+  height: 50vh;
+  padding-bottom: 1em;
+}
+
+main img {
+  width: 100%;
+  height: auto;
+}
+
+.img-fejl {
+  width: 30vw;
+  height: auto; /* -------- Hvordan får jeg det til at sidde i midten! det vil ikke.. ----------- */
+}
+
 /*----------Hovedindhold-----------*/
 main section {
   margin-left: 15%;
@@ -92,19 +110,9 @@ main section:nth-child(1) {
   padding-bottom: 1em;
 }
 
-.billede-tekst img {
-  width: 85vw;
-  display: block;
-}
-
 main section:nth-child(3) {
   background-color: #e2e2e2;
   padding-bottom: 1em;
-}
-
-.billede-tekst img {
-  padding-top: 3rem;
-  padding-bottom: 10rem;
 }
 
 .bg-grå {
@@ -117,6 +125,7 @@ main section:nth-child(3) {
 }
 
 /*--------- Stage ---------*/
+/* ------ Hvordan fpr jeg knapperne tili at blive større ------ */
 .stage {
   background-color: #f8f8f8;
   /* display: none;  fjernes når scenariet er på plads */
@@ -193,15 +202,11 @@ footer .logo {
   }
   main section:nth-of-type(2) h2 {
     text-align: center;
-    padding-bottom: 1.5em;
   }
   .billede-tekst img {
-    width: 40%;
+    width: 100%;
     padding-right: 2em;
     order: 1;
-  }
-  .billede-tekst div {
-    width: 60%;
   }
   .billede-tekst a {
     margin: 0 2em 1.5em 2em;
