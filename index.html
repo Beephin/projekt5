@@ -9,6 +9,7 @@
     <script src="js/script.js" defer></script>
 </head>
 <body>
+
 <header>
     <nav>
        <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo sikkerhed"></a>
@@ -17,21 +18,23 @@
             <li><a href="#">Kontakt</a></li>
         </ul>
     </nav>
+
+    <section class="banner"> 
+        <img src="img/banner.png" alt="banner billede">
+    </section>
 </header>
-<header class="banner">
-    <img src="img/banner.png" alt="banner billede">
-</header>
+
 <main>
-    <section class="cyber">
+    <section class="cyber"> 
         <h1>Hvad er Cyber sikkerhed?</h1>
         <p>Det lyder farligt, men det er det ikke -tværtimod.</p>
         <p>Cybersikkerhed er noget, de færreste tænker på i hverdagen. Ikke destro mindre, er det noget som også er relavant for dig som studerende. Du bruger din telefon og computer konstant til studie, sociale medier, netbank og måske studiejob, og det gør dig til et oplagt mål for cyberkriminelle.</p>
 
         <p>En af de mest udbredte trusler er 'Phishing'. Det er typisk via mails, SMS’er eller beskeder, hvor afsenderen forsøger at få dig til at klikke på et link eller give dine oplysninger. Det kan ligne en besked fra din bank, PostNord eller Netflix, hvor du bliver bedt om at “opdatere dine oplysninger” eller “betale en manglende regning”.</p>
         <p>Problemet er bare, at det hele er falsk. Hvis du indtaster dine oplysninger eller bare klikker på linket, kan det allerede være for sent -måske har du lige givet adgang til dine alle konti.</p>
-    
     </section>
-    <section>
+
+    <section> 
         <h2>Hvad er god beskyttelse?</h2>
         <div class="billede-tekst">
             <div>
@@ -52,7 +55,7 @@
         </div>
     </section>
 
-    <section class="bg-grå">
+    <section class="bg-grå"> 
         <div>
             <h4>5 "Fun" facts</h4>
 
@@ -66,14 +69,13 @@
         </div>
     </section>
 
-     <section class="scenarie">
-        <div>
+    <section class="scenarie">
+        <div class="tekst-test">
             <h5>Test dig selv</h5>
-
-            <img src="img/bg-scenarie.png" alt="Dame ved computer"> <!-- Kan indsættes i scss, elmenter skal dog være i samme kasse-->
         </div>
     </section>
-    <section class="stage">
+
+    <div>
         <section class="stage active"> <!-- index 0 -->
             <h5>Du sidder i skolen og modtager en mail</h5>
             <button class="btn">Åben mail</button>
@@ -82,35 +84,36 @@
         <section class="stage"> <!-- index 1 -->
             <h6>Hvad gør du?</h6>
             <img src="img/mail.png" alt="mailen">
-            <p>1. Du skynder dig at trykke på linket i mailen for ikke at miste din SU</p>
-            <p>2. Du ringer til SU for at høre om de har sendt dig mailen</p>
-            <p>3. Du trykker på mailadressen, for at se præcis hvem som har sendt dig mailen</p>
+            <p>1. Du trykker på linket med et samme, så du ikke at mister din SU!</p>
+            <p>2. Du ringer til SU, for at høre om de har sendt dig mailen</p>
+            <p>3. Du trykker på mailadressen, for at se præcis hvem mailen er fra</p>
             <button class="btn-valg">1</button>
             <button class="btn-valg">2</button>
             <button class="btn-valg">3</button>
         </section>
 
-        <seection class="stage"> <!-- index 2 -->
+        <section class="stage"> <!-- index 2 -->
             <h6>FEJL!</h6>
             <p>Du må aldrig trykke på et link i en mail, hvis du ikke er 100% sikker på at den er ægte!</p>
             <img class="img-fejl" src="img/fejl.png" alt="">
             <button class="btn">start forfra</button>
-        </seection>
+        </section>
 
-        <seection class="stage"> <!-- index 3 -->
+        <section class="stage"> <!-- index 3 -->
             <h6>God ide!</h6>
-            <p>Man kan altid ringe til afsenderen for at høre om mailen er fra dem</p>
+            <p>Man kan altid ringe til afsenderen, for at høre om mailen er fra dem.</p>
             <img src="img/ring.png" alt="">
             <button class="btn">start forfra</button>
-        </seection>
+        </section>
 
-        <seection class="stage"> <!-- index 4 -->
+        <section class="stage"> <!-- index 4 -->
             <h6>God ide!</h6>
-            <p>Her kan du som regel se om en mail er sendt fra en ægte kilde</p>
+            <p>Her kan du som regel se om en mail er sendt fra en ægte kilde.</p>
             <img src="img/pop-up.png" alt="Pop-up mail adresse">
             <button class="btn">start forfra</button>
-        </seection>
-    </section>
+        </section>
+    </div>
+
 </main>
 
 <footer>

@@ -120,15 +120,24 @@ main section:nth-child(3) {
   text-align: center;
 }
 
-.scenarie img {
+.scenarie {
+  background-image: url(../img/bg-scenarie.png);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
   opacity: 40%;
 }
 
+.tekst-test {
+  opacity: none;
+  text-align: center;
+}
+
 /*--------- Stage ---------*/
-/* ------ Hvordan fpr jeg knapperne tili at blive større ------ */
+/* ------ Hvordan får jeg knapperne til at blive større ------ */
 .stage {
   background-color: #f8f8f8;
-  /* display: none; Fjerner indholdet i browseren*/
+  display: none;
   max-width: 800px;
   margin: 0 auto;
   padding: 1em;
