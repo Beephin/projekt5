@@ -1,13 +1,5 @@
 
-/*----------Body-----------*/
-
-$nav-color: #22213a;
-$body-bg-color: #f8f8f8;
-$cta: #4e6867;
-$cta-hover: #333636;
-$space: 1em;
-$text-color: #333;
-$font: 'Open Sans', sans-serif;
+/* ---------- Tekst ----------- */
 
 body{
     font-family: $font;
@@ -121,7 +113,7 @@ main img{
 
 .img-fejl{
     width: 30vw;
-    height: auto;   /* -------- Hvordan får jeg det til at sidde i midten! det vil ikke.. ----------- */
+    height: auto;
 }
 
 /*----------Hovedindhold-----------*/
@@ -154,14 +146,14 @@ main section:nth-child(3){
     opacity: 40%;
 }
 
-.tekst-test{
-    opacity: none;
+.scenarie .tekst-test{
+    border-bottom: 3px $nav-color solid;
+    background-color: $cta;
     text-align: center;
+    font-size: larger;
 }
 
 /*--------- Stage ---------*/
-
-/* ------ Hvordan får jeg knapperne til at blive større ------ */
 
 .stage {
     background-color: $body-bg-color;
@@ -182,8 +174,6 @@ main section:nth-child(3){
         margin-left: 45%;
     }
 
-     /* @include partial.btn; */
-
     .btn:hover {
         background-color: $cta-hover;
     }
@@ -203,6 +193,7 @@ main section:nth-child(3){
 }
 
 /*----------Footer-----------*/
+
 footer{
     background-color: $nav-color;
     color: $body-bg-color;
@@ -263,6 +254,7 @@ footer{
     .bg-grå{
         display: flex;
         gap: 3em;
+        padding-top: 2em; 
     }
 
     .bg-grå img{
